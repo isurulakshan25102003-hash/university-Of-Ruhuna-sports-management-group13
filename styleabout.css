@@ -157,9 +157,9 @@ nav a.active {
 .massage {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 25px;
 
-    padding: 50px 20px;
+    padding: 30px;
 }
 
 .card2 {
@@ -173,10 +173,10 @@ nav a.active {
 .card2 {
     background-color: #FFFFFF;
     padding: 30px;
-    width: 45%;
-    border: 2px solid #D4A72C;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(11,31,58,0.12);
+    width: 100%;
+    border: 1px solid #e2e8f0;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(3,3,57,0.08);
 }
 .card2 img{
     width: 180px;
@@ -185,7 +185,7 @@ nav a.active {
     border-radius: 50%;
     margin: auto;
     display: block;
-    
+    border: 4px solid #e8eef8;
 }
 
 .card2 h2 {
@@ -213,4 +213,100 @@ footer {
     border-top: 3px solid #D4A72C;
     text-align: center;
     padding: 20px;
+}
+
+/* Sports Facilities */
+
+.facilities {
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.facilities h1 {
+    color: #030339;
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+.facility-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    align-items: stretch;
+}
+
+.facility-card {
+    background-color: #FFFFFF;
+    flex: 1;
+    padding: 25px;
+    border: 1px solid #D4A72C;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(3, 3, 57, 0.10);
+    transition: 0.3s;
+}
+
+.facility-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(3, 3, 57, 0.15);
+}
+
+.facility-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.facility-card h2 {
+    color: #030339;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.facility-card p {
+    color: #444444;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* Dropdown */
+
+.facility-card details {
+    margin-top: 20px;
+}
+
+.facility-card summary {
+    background-color: #030339;
+    color: #FFFFFF;
+    padding: 13px;
+    border-radius: 8px;
+    cursor: pointer;
+    list-style-position: inside;
+    transition: 0.3s;
+}
+
+.facility-card summary:hover {
+    background-color: #D4A72C;
+    color: #030339;
+}
+
+/* Sports List */
+
+.facility-card details ul {
+    margin-top: 15px;
+    padding: 20px 20px 20px 35px;
+    background-color: #EAF1F8;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.facility-card details li {
+    margin-bottom: 10px;
+    color: #344256;
+    line-height: 1.6;
+}
+
+.facility-card details li:last-child {
+    margin-bottom: 0;
 }
