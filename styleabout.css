@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #EAF1F8;
+}
+
+
+/* Navigation Bar */
+
+header {
+    background-color:rgb(3, 3, 57);
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 15px 30px;
+}
+
+
+/* Logo */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+}
+
+.logo h2 {
+    font-size: 18px;
+}
+
+.logo p {
+    font-size: 12px;
+}
+
+
+/* Navigation Links */
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover,
+nav a.active {
+    color: #ffdf70;
+}
+
+
+/* Login Button */
+
+.login-btn {
+    background-color: #ffdf70;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+/* About Section */
+
+/* About Section */
+
+.about {
+    position: relative;
+    background-image: url("cov.png");
+    background-position: center;
+    background-size: cover;
+    isolation: isolate;
+    text-align: left;
+    padding: 70px 20px;
+    color: white;
+}
+
+.about::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("cov.png");
+    background-position: center;
+    background-size: cover;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.about h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px black;
+}
+
+.about p {
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.8;
+    text-shadow: 1px 1px 4px black;
+}
+
+
+/* Content Cards */
+
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+    padding: 50px 30px;
+}
+
+.card1 {
+    background-color: #0B1F3A;
+    padding: 30px;
+    width: 30%;
+    border: 2px solid #D4A72C;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(11,31,58,0.15);
+}
+
+.card1 h2 {
+    color: #D4A72C;
+    margin-bottom: 15px;
+}
+
+.card1 {
+    transition: 0.3s;
+}
+.card1:hover{
+    transform: scale(1.05);
+    box-shadow:0 8px 20px rgba(11,31,58,0.25);
+}
+
+.card1 {
+    line-height: 1.7;
+    color: #F4F7FB;
+    font-style: italic;
+}
+
+.massage {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+    padding: 30px;
+}
+
+.card2 {
+    transition: 0.3s;
+}
+.card2:hover{
+    transform: scale(1.05);
+    box-shadow:0 8px 20px rgba(11,31,58,0.20);
+}
+
+.card2 {
+    background-color: #FFFFFF;
+    padding: 30px;
+    width: 100%;
+    border: 1px solid #e2e8f0;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(3,3,57,0.08);
+}
+.card2 img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+    border: 4px solid #e8eef8;
+}
+
+.card2 h2 {
+    text-decoration: underline;
+    text-decoration-color: #D4A72C;
+    text-decoration-thickness: 3px;
+    color: #0B1F3A;
+    margin-bottom: 15px;
+}
+
+.card2 p {
+    line-height: 1.7;
+    color : #344256;
+    font-weight: 400;
+}
+
+                                                
+
+
+/* Footer */
+
+footer {
+    background-color: #0B1F3A;
+    color: white;
+    border-top: 3px solid #D4A72C;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Sports Facilities */
+
+.facilities {
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.facilities h1 {
+    color: #030339;
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+.facility-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    align-items: stretch;
+}
+
+.facility-card {
+    background-color: #FFFFFF;
+    flex: 1;
+    padding: 25px;
+    border: 1px solid #D4A72C;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(3, 3, 57, 0.10);
+    transition: 0.3s;
+}
+
+.facility-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(3, 3, 57, 0.15);
+}
+
+.facility-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.facility-card h2 {
+    color: #030339;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.facility-card p {
+    color: #444444;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* Dropdown */
+
+.facility-card details {
+    margin-top: 20px;
+}
+
+.facility-card summary {
+    background-color: #030339;
+    color: #FFFFFF;
+    padding: 13px;
+    border-radius: 8px;
+    cursor: pointer;
+    list-style-position: inside;
+    transition: 0.3s;
+}
+
+.facility-card summary:hover {
+    background-color: #D4A72C;
+    color: #030339;
+}
+
+/* Sports List */
+
+.facility-card details ul {
+    margin-top: 15px;
+    padding: 20px 20px 20px 35px;
+    background-color: #EAF1F8;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.facility-card details li {
+    margin-bottom: 10px;
+    color: #344256;
+    line-height: 1.6;
+}
+
+.facility-card details li:last-child {
+    margin-bottom: 0;
+}

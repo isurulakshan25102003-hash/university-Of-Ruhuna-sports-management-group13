@@ -1,0 +1,1456 @@
+.navbar {
+    background-color: var(--navy);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 35px;
+    min-height: 75px;
+
+}
+/* University logo and name */
+
+.logo h2{
+    color: var(--white);
+    font-size: 18px;
+
+}
+
+.logo h3 {
+    color: var(--gold);
+    font-size: 18px;
+    margin-top: 3px;
+
+}
+/* navigation Links */
+
+.navbar nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+
+}
+.navbar nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar nav ul li a:hover {
+    color: var(--gold);
+}
+
+
+
+.navbar nav ul li a.active {
+    background-color: var(--gold);
+    color: var(--navy);
+    padding: 10px 16px;
+    border-radius: 25px;
+}
+
+/* Login Button */
+
+.login-btn {
+    background-color: var(--gold);
+    color: var(--navy);
+    text-decoration: none;
+    padding: 11px 22px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Hero Section */
+
+.hero {
+    min-height: 400px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(3, 18, 40, 0.95),
+            rgba(3, 18, 40, 0.35)
+        ),
+        url("images/hero-sports.png");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+
+    padding: 50px 6%;
+    color: white;
+}
+
+
+
+.hero-content {
+    max-width: 650px;
+}
+
+/* Subtitle */
+
+.hero-subtitle {
+    color: var(--gold);
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.hero-content h1 span {
+    color: var(--gold);
+}
+
+
+
+.hero-description {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+/* Hero Button */
+
+.hero-btn {
+    display: inline-block;
+    background-color: var(--gold);
+    color: var(--navy);
+
+    text-decoration: none;
+    font-weight: bold;
+
+    padding: 13px 25px;
+    border-radius: 30px;
+
+    transition: 0.3s;
+}
+
+
+.hero-btn:hover {
+    background-color: white;
+    transform: translateY(-3px);
+}
+
+
+/*  SPORTS CATEGORIES  */
+
+.sports-categories {
+
+    background-color: #f5f6f8;
+
+    padding: 45px 5%;
+
+}
+
+
+
+.section-heading {
+
+    text-align: center;
+
+    margin-bottom: 35px;
+
+}
+
+
+.section-heading h2 {
+
+    color: var(--navy);
+
+    font-size: 30px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.section-heading p {
+
+    color: #666;
+
+    font-size: 15px;
+
+}
+
+
+
+.sports-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.sport-card {
+
+    background-color: var(--white);
+
+    border-radius: 12px;
+
+    padding: 22px 12px;
+
+    text-align: center;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+
+    border: 1px solid #eeeeee;
+
+}
+
+
+/* Sport Icon */
+
+.sport-icon {
+
+    font-size: 40px;
+
+    margin-bottom: 12px;
+
+}
+
+
+/* Sport Name */
+
+.sport-card h3 {
+
+    color: var(--navy);
+
+    font-size: 17px;
+
+    margin-bottom: 8px;
+
+}
+
+
+/* Sport Description */
+
+.sport-card p {
+
+    color: #666;
+
+    font-size: 13px;
+
+    margin-bottom: 15px;
+
+}
+
+
+/* View More Button */
+
+.sport-card a {
+
+    display: inline-block;
+
+    background-color: var(--gold);
+
+    color: var(--navy);
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    padding: 9px 17px;
+
+    border-radius: 20px;
+
+    transition: 0.3s;
+
+}
+
+
+
+.sport-card:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
+    border-color: var(--gold);
+
+}
+
+
+
+.sport-card a:hover {
+
+    background-color: var(--navy);
+
+    color: var(--white);
+
+}
+
+
+
+@media (max-width: 992px) {
+
+    .sports-container {
+
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+}
+
+
+
+@media (max-width: 600px) {
+
+    .sports-container {
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 12px;
+
+    }
+
+    .section-heading h2 {
+
+        font-size: 24px;
+
+    }
+
+    .sport-card {
+
+        padding: 18px 8px;
+
+    }
+
+}
+
+
+/* Upcoming Competitions */
+
+.upcoming-section {
+
+    background-color: #ffffff;
+
+    padding: 60px 5%;
+
+}
+
+
+.section-label {
+
+    display: inline-block;
+
+    color: #b68b16;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 12px;
+
+}
+
+
+
+.competition-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    margin-top: 35px;
+
+}
+
+
+
+.competition-card {
+
+    background-color: #ffffff;
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+
+    border: 1px solid #eeeeee;
+
+    transition: 0.3s;
+
+}
+
+
+
+.competition-card:hover {
+
+    transform: translateY(-7px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+
+}
+
+
+/*  Images */
+
+.competition-image {
+
+    height: 200px;
+
+    background-size: cover;
+
+    background-position: center;
+
+    position: relative;
+
+}
+
+
+/* Football Image */
+
+.football-image {
+
+    background-image: url("images/football.jpg");
+
+}
+
+
+/* Cricket Image */
+
+.cricket-image {
+
+    background-image: url("images/cricket.png");
+
+}
+
+
+/* Volleyball Image */
+
+.volleyball-image {
+
+    background-image: url("images/volleyball.jpg");
+
+}
+
+
+.event-tag {
+
+    position: absolute;
+
+    top: 15px;
+
+    left: 15px;
+
+    background-color: var(--gold);
+
+    color: var(--navy);
+
+    padding: 7px 13px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+}
+
+
+/* Competition Details */
+
+.competition-details {
+
+    padding: 22px;
+
+}
+
+
+/* Sport Type */
+
+.competition-type {
+
+    color: #b68b16;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+}
+
+
+
+.competition-details h3 {
+
+    color: var(--navy);
+
+    font-size: 19px;
+
+    margin: 12px 0 18px;
+
+    line-height: 1.4;
+
+}
+
+
+
+.event-info {
+
+    border-top: 1px solid #eeeeee;
+
+    padding-top: 15px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.event-info p {
+
+    color: #555555;
+
+    font-size: 13px;
+
+    margin-bottom: 12px;
+
+}
+
+
+/* Register Button */
+
+.register-btn {
+
+    display: block;
+
+    text-align: center;
+
+    background-color: var(--navy);
+
+    color: var(--white);
+
+    padding: 12px;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+}
+
+
+.register-btn:hover {
+
+    background-color: var(--gold);
+
+    color: var(--navy);
+
+}
+
+
+/* View All Button */
+
+.view-all-container {
+
+    text-align: center;
+
+    margin-top: 40px;
+
+}
+
+
+.view-all-btn {
+
+    display: inline-block;
+
+    border: 2px solid var(--navy);
+
+    color: var(--navy);
+
+    padding: 12px 28px;
+
+    border-radius: 25px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+}
+
+
+.view-all-btn:hover {
+
+    background-color: var(--navy);
+
+    color: var(--white);
+
+}
+
+
+
+@media (max-width: 992px) {
+
+    .competition-container {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+
+@media (max-width: 600px) {
+
+    .competition-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .upcoming-section {
+
+        padding: 40px 5%;
+
+    }
+
+    .competition-image {
+
+        height: 180px;
+
+    }
+
+}
+
+
+/* Past results */
+
+.past-results {
+
+    background-color: #f5f6f8;
+
+    padding: 60px 5%;
+
+}
+
+
+
+.results-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    margin-top: 35px;
+
+}
+
+
+
+.result-card {
+
+    background-color: var(--white);
+
+    border-radius: 14px;
+
+    padding: 22px;
+
+    border: 1px solid #eeeeee;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+
+}
+
+
+.result-card:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.13);
+
+    border-color: var(--gold);
+
+}
+
+
+
+.result-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 18px;
+
+}
+
+
+.result-sport {
+
+    color: #b68b16;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+}
+
+
+
+.result-status {
+
+    background-color: #e5f5e9;
+
+    color: #248344;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    padding: 6px 10px;
+
+    border-radius: 15px;
+
+}
+
+
+
+.result-card h3 {
+
+    color: var(--navy);
+
+    font-size: 18px;
+
+    line-height: 1.4;
+
+    margin-bottom: 10px;
+
+}
+
+
+
+.result-date {
+
+    color: #888888;
+
+    font-size: 13px;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* Score Board */
+
+.score-board {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background-color: #f5f6f8;
+
+    padding: 18px 10px;
+
+    border-radius: 10px;
+
+    gap: 8px;
+
+}
+
+
+/* Team Details */
+
+.team {
+
+    flex: 1;
+
+    text-align: center;
+
+}
+
+
+.team-icon {
+
+    font-size: 28px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.team h4 {
+
+    color: var(--navy);
+
+    font-size: 12px;
+
+    line-height: 1.4;
+
+}
+
+
+/* Match Scores */
+
+.score {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: var(--navy);
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+}
+
+
+.score small {
+
+    color: #999999;
+
+    font-size: 11px;
+
+}
+
+
+/* Winner Information */
+
+.winner-info {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background-color: #fff8df;
+
+    border-left: 4px solid var(--gold);
+
+    padding: 12px;
+
+    margin-top: 18px;
+
+    gap: 8px;
+
+}
+
+
+.winner-info span {
+
+    color: #9b7410;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+}
+
+
+.winner-info strong {
+
+    color: var(--navy);
+
+    font-size: 12px;
+
+    text-align: right;
+
+}
+
+
+/* View Results Button */
+
+.view-results-container {
+
+    text-align: center;
+
+    margin-top: 40px;
+
+}
+
+
+.results-btn {
+
+    display: inline-block;
+
+    background-color: var(--navy);
+
+    color: var(--white);
+
+    padding: 13px 28px;
+
+    border-radius: 25px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+}
+
+
+.results-btn:hover {
+
+    background-color: var(--gold);
+
+    color: var(--navy);
+
+}
+
+
+
+@media (max-width: 992px) {
+
+    .results-container {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+
+@media (max-width: 600px) {
+
+    .results-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .past-results {
+
+        padding: 40px 5%;
+
+    }
+
+    .result-card {
+
+        padding: 18px;
+
+    }
+
+}
+
+
+/* Our Champions */
+
+.champions-section {
+
+    background-color: var(--navy);
+
+    padding: 65px 5%;
+
+    color: white;
+
+}
+
+
+
+.champions-section .section-heading h2 {
+
+    color: white;
+
+}
+
+
+.champions-section .section-heading p {
+
+    color: #d0d5df;
+
+}
+
+
+
+.champions-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    max-width: 1100px;
+
+    margin: 45px auto 0;
+
+    align-items: center;
+
+}
+
+
+
+.champion-card {
+
+    background-color: white;
+
+    color: var(--navy);
+
+    padding: 30px 20px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    position: relative;
+
+    border: 2px solid transparent;
+
+    transition: 0.3s;
+
+}
+
+
+
+.champion-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+
+}
+
+
+/* First Place  */
+
+.gold-card {
+
+    border-color: #d4a72c;
+
+    padding-top: 40px;
+
+    padding-bottom: 40px;
+
+}
+
+
+/* Second Place */
+
+.silver-card {
+
+    border-color: #bfc5ce;
+
+}
+
+
+/* Third Place */
+
+.bronze-card {
+
+    border-color: #cd7f32;
+
+}
+
+
+
+.medal-icon {
+
+    font-size: 38px;
+
+    margin-bottom: 12px;
+
+}
+
+
+
+.position-label {
+
+    display: inline-block;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 18px;
+
+    color: var(--navy);
+
+}
+
+
+
+.champion-trophy {
+
+    font-size: 55px;
+
+    margin-bottom: 15px;
+
+}
+
+
+/* Champion Name */
+
+.champion-card h3 {
+
+    color: var(--navy);
+
+    font-size: 21px;
+
+    margin-bottom: 12px;
+
+}
+
+
+/* Sport Name */
+
+.champion-sport {
+
+    color: #777777;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    min-height: 42px;
+
+}
+
+
+
+
+.achievement {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+
+    margin-top: 20px;
+
+    padding: 13px;
+
+    border-radius: 8px;
+
+}
+
+
+/* Gold Achievement */
+
+.gold-card .achievement {
+
+    background-color: #fff4ce;
+
+    color: #946b00;
+
+}
+
+
+/* Silver Achievement */
+
+.silver-card .achievement {
+
+    background-color: #edf0f4;
+
+    color: #596574;
+
+}
+
+
+/* Bronze Achievement */
+
+.bronze-card .achievement {
+
+    background-color: #fff0e5;
+
+    color: #a45b24;
+
+}
+
+
+.achievement strong {
+
+    font-size: 15px;
+
+}
+
+
+.achievement span {
+
+    font-size: 12px;
+
+}
+
+
+
+.champions-message {
+
+    text-align: center;
+
+    margin-top: 55px;
+
+}
+
+
+.champions-message h3 {
+
+    color: var(--gold);
+
+    font-size: 23px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.champions-message p {
+
+    color: #d0d5df;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+}
+
+
+
+@media (max-width: 992px) {
+
+    .champions-container {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .gold-card {
+
+        grid-column: 1 / -1;
+
+        order: -1;
+
+    }
+
+}
+
+
+
+@media (max-width: 600px) {
+
+    .champions-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+    }
+
+    .gold-card {
+
+        grid-column: auto;
+
+    }
+
+    .champions-section {
+
+        padding: 45px 5%;
+
+    }
+
+    .champions-message h3 {
+
+        font-size: 19px;
+
+    }
+
+}
+
+
+/* Footer */
+
+.main-footer {
+
+    background-color: var(--navy);
+
+    color: white;
+
+    padding: 50px 5% 0;
+
+}
+
+
+
+.footer-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 35px;
+
+    padding-bottom: 40px;
+
+}
+
+
+
+.footer-column h3 {
+
+    color: var(--gold);
+
+    font-size: 15px;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.footer-column p {
+
+    color: #d0d5df;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+    margin-bottom: 12px;
+
+}
+
+
+
+.footer-column a {
+
+    display: block;
+
+    color: #d0d5df;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    margin-bottom: 13px;
+
+    transition: 0.3s;
+
+}
+
+
+.footer-column a:hover {
+
+    color: var(--gold);
+
+    padding-left: 5px;
+
+}
+
+
+
+.footer-bottom {
+
+    border-top: 1px solid rgba(255,255,255,0.2);
+
+    padding: 20px 0;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.footer-bottom p {
+
+    color: #aeb8c7;
+
+    font-size: 12px;
+
+}
+
+
+
+@media (max-width: 992px) {
+
+    .footer-container {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .footer-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+    }
+
+    .footer-bottom {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f6f8;
+    color:#071a38;
+}
+
+:root {
+    --navy: #06172f;
+    --gold: #ffc21c;
+    --white: #ffffff;
+}
