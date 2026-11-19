@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport"
+content="width=device-width,
+initial-scale=1.0">
+    <title>Ruhuna Sports Hub</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to Ruhuna Sports Hub</h1>
+        <p>University Of Ruhuna Sport Management</p>
+</header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="sports.html">Sports</a>
+            <a href="teams.html">Teams</a>
+        </nav>
+
+        <main>
+            <h2>Explore Our Sports</h2>
+            <p>Discover the sports activities at the University of Ruhuna</p>
+        </main>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
