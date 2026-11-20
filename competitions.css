@@ -1,68 +1,66 @@
-.navbar {
-    background-color: var(--navy);
+header {
+    background-color:rgb(3, 3, 57);
+    color: white;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 35px;
-    min-height: 75px;
 
-}
-/* University logo and name */
-
-.logo h2{
-    color: var(--white);
-    font-size: 18px;
-
+    padding: 15px 30px;
 }
 
-.logo h3 {
-    color: var(--gold);
-    font-size: 18px;
-    margin-top: 3px;
 
-}
-/* navigation Links */
+/* Logo */
 
-.navbar nav ul {
+.logo {
     display: flex;
-    list-style: none;
-    gap: 25px;
-
+    align-items: center;
+    gap: 10px;
 }
-.navbar nav ul li a {
-    color: var(--white);
+
+.logo img {
+    width: 45px;
+    height: 45px;
+}
+
+.logo h2 {
+    font-size: 18px;
+}
+
+.logo p {
+    font-size: 12px;
+}
+
+
+/* Navigation Links */
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
     text-decoration: none;
     font-size: 14px;
-    font-weight: bold;
-    transition: 0.3s;
 }
 
-.navbar nav ul li a:hover {
-    color: var(--gold);
+nav a:hover,
+nav a.active {
+    color: #ffdf70;
 }
 
-
-
-.navbar nav ul li a.active {
-    background-color: var(--gold);
-    color: var(--navy);
-    padding: 10px 16px;
-    border-radius: 25px;
-}
 
 /* Login Button */
 
 .login-btn {
-    background-color: var(--gold);
-    color: var(--navy);
-    text-decoration: none;
-    padding: 11px 22px;
-    border-radius: 25px;
-    font-weight: bold;
-    font-size: 14px;
+    background-color: #ffdf70;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
 }
 
-/* Hero Section */
 
 .hero {
     min-height: 400px;
@@ -73,7 +71,7 @@
             rgba(3, 18, 40, 0.95),
             rgba(3, 18, 40, 0.35)
         ),
-        url("images/hero-sports.png");
+        url("competition.png");
 
     background-size: cover;
     background-position: center;
@@ -425,7 +423,7 @@
 
 .football-image {
 
-    background-image: url("images/football.jpg");
+    background-image: url("football.jpg");
 
 }
 
@@ -434,7 +432,7 @@
 
 .cricket-image {
 
-    background-image: url("images/cricket.png");
+    background-image: url("cricket2.png");
 
 }
 
@@ -443,7 +441,7 @@
 
 .volleyball-image {
 
-    background-image: url("images/volleyball.jpg");
+    background-image: url("volleyball.jpg");
 
 }
 

@@ -207,12 +207,27 @@ nav a.active {
 
 /* Footer */
 
-footer {
-    background-color: #0B1F3A;
+.footer {
+    background: #101f3d;
     color: white;
-    border-top: 3px solid #D4A72C;
     text-align: center;
-    padding: 20px;
+    padding: 35px 15px;
+}
+
+.footer h2 {
+    color: #f5b800;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.footer p {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.copyright {
+    color: #aeb8ca;
+    margin-top: 20px;
 }
 
 /* Sports Facilities */

@@ -14,31 +14,30 @@
 <body>
 
 <!-- Navbar -->
-<nav class="navbar">
+<header>
 
-    <div class="logo">
-        <img src="Ruhuna-University-logo.png" alt="">
-        <div class="logo-text">
-            <h2>Sports Management</h2>
-            <p>University of Ruhuna</p>
+        <div class="logo">
+            <img src="facultylogo.png" alt="University Logo">
+
+            <div>
+                <h2 style="color:#FFD54F;">Sports Management</h2>
+                <p>University of Ruhuna</p>
+            </div>
         </div>
-    </div>
 
-    <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Sports</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Teams</a></li>
-        <li><a href="#">Results</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
+        <nav>
+            <a href="home-page.html" class="active">Home</a>
+            <a href="sports.html" >Sports</a>
+            <a href="competitions.html">Events</a>
+            
+            <a href="registration.html">Registration</a>
+            <a href="about.html" >About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
 
-    <a href="login_page.html" class="login-btn">
-         Login
-    </a>
+        <button class="login-btn">Login</button>
 
-</nav>
+    </header>
 
 <!-- Hero Section -->
 <section class="hero">
@@ -54,8 +53,8 @@
         </p>
 
         <a href="#" class="hero-btn">
-            Explore Sports →
         </a>
+            <a href="sports.html" class="explore-btn">Explore now</a>
     </div>
 
 </section>
@@ -67,39 +66,52 @@
     <div class="category">
         
         <h4>Football</h4>
+        <div class="sport-icon">⚽</div>
     </div>
 
     <div class="category">
         
         <h4>Basketball</h4>
+        <div class="sport-icon">🏀</div>
     </div>
 
     <div class="category">
         
         <h4>Volleyball</h4>
+        <div class="sport-icon">🏐</div>
     </div>
 
     <div class="category">
         
         <h4>Cricket</h4>
+         <div class="sport-icon">🏏</div>
     </div>
 
     <div class="category">
         
         <h4>Badminton</h4>
+        <div class="sport-icon">🏸</div>
     </div>
 
     <div class="category">
         
         <h4>Track & Field</h4>
+         <div class="sport-icon">🏃</div>
     </div>
 
     <div class="category">
         
         <h4>More Sports</h4>
+        <div class="sport-icon">🏆</div>
     </div>
+    
 
 </section>
+<div class="welcome-section">
+        ..Welcome..<br><span class="blue-text">University Of Ruhuna<br><span class="yellow-text">Sports</span>
+    </div>
+    
+
 
 <!-- Events -->
 
@@ -109,7 +121,7 @@
 
         <div class="section-title">
             <h2> Upcoming Events</h2>
-            <a href="#">View All →</a>
+            <a href="#" class="explore-btn">View All →</a>
         </div>
 
         <div class="event">
@@ -172,6 +184,17 @@
     </div>
 
 </section>
+<footer class="footer">
+
+    <h2>RUHUNA SPORT MANAGEMENT</h2>
+
+    <p>University of Ruhuna | Matara, Sri Lanka</p>
+
+    <p class="copyright">
+        © 2026 University of Ruhuna. All Rights Reserved.
+    </p>
+
+</footer>
 
 </body>
 </html>
