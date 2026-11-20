@@ -12,70 +12,70 @@ body {
     color: #17233e;
 }
 
-/* NAVIGATION */
-.navbar {
-    height: 85px;
-    background: #101f3d;
+header {
+    background-color:rgb(3, 3, 57);
+    color: white;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 5%;
+
+    padding: 15px 30px;
 }
+
+
+/* Logo */
 
 .logo {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: white;
 }
 
-.logo-icon {
-    background: #f5b800;
-    color: #101f3d;
+.logo img {
     width: 45px;
     height: 45px;
-    border-radius: 50%;
+}
+
+.logo h2 {
+    font-size: 18px;
+}
+
+.logo p {
+    font-size: 12px;
+}
+
+
+/* Navigation Links */
+
+nav {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
+    gap: 20px;
 }
 
-.logo h3 {
-    font-size: 15px;
-}
-
-.logo span {
-    font-size: 11px;
-    color: #f5b800;
-    font-weight: bold;
-}
-
-.navbar nav {
-    display: flex;
-    gap: 22px;
-}
-
-.navbar nav a {
-    text-decoration: none;
+nav a {
     color: white;
+    text-decoration: none;
     font-size: 14px;
-    transition: 0.3s;
 }
 
-.navbar nav a:hover,
-.navbar nav a.active {
-    color: #f5b800;
+nav a:hover,
+nav a.active {
+    color: #ffdf70;
 }
+
+
+/* Login Button */
 
 .login-btn {
-    background: #f5b800;
-    color: #101f3d;
-    padding: 12px 27px;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: bold;
+    background-color: #ffdf70;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
 }
+
+
 
 /* HERO SECTION */
 .contact-hero{
@@ -87,7 +87,7 @@ body {
             rgba(33, 36, 51, 0.547),
             rgba(72, 79, 89, 0.551)
         ),
-        url("imafe.jpg");
+        url("winning\ cup1.png");
 
     background-size: cover;
     background-position: center;
@@ -374,7 +374,7 @@ body {
             rgba(33, 36, 51, 0.547),
             rgba(17, 17, 18, 0.551)
         ),
-        url("picture.jpg");
+        url("All-sports.png");
 
     background-size: cover;
     background-position: center;

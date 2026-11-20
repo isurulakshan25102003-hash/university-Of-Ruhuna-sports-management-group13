@@ -10,57 +10,67 @@ body{
 }
 
 /* Navbar */
-.navbar{
-    background:#032452;
-    color:#fff;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:15px 40px;
-}
+header {
+    background-color:rgb(3, 3, 57);
+    color: white;
 
-.logo{
-    display:flex;
-    align-items:center;
-    gap:12px;
-}
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-.logo img{
-    width:55px;
-    height:55px;
-    border-radius:50%;
-}
-
-.logo-text h2{
-    font-size:20px;
-    color:#f4c542;
-}
-
-.logo-text p{
-    font-size:13px;
-}
-
-.nav-links{
-    display:flex;
-    list-style:none;
-    gap:25px;
-}
-
-.nav-links a{
-    color:white;
-    text-decoration:none;
-    font-weight:500;
+    padding: 15px 30px;
 }
 
 
+/* Logo */
 
-.login-btn{
-    background:#f4c542;
-    color:#000;
-    padding:10px 18px;
-    border-radius:20px;
-    text-decoration:none;
-    font-weight:bold;
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+}
+
+.logo h2 {
+    font-size: 18px;
+}
+
+.logo p {
+    font-size: 12px;
+}
+
+
+/* Navigation Links */
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover,
+nav a.active {
+    color: #ffdf70;
+}
+
+
+/* Login Button */
+
+.login-btn {
+    background-color: #ffdf70;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
 }
 
 /* Hero Section */
@@ -68,7 +78,7 @@ body{
     height:500px;
     background:
     linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-    url('hero-img.png');
+    url('home page banner.jpeg');
     background-size:cover;
     background-position:center;
     display:flex;
@@ -396,7 +406,21 @@ body{
     background: white;
     transform: translateY(-3px);
 }
-
+.explore-btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffcc19;
+    color: black;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: transform 0.2s ease,background-color 0.2s ease;
+}
 /* Common Section */
 
 .section {
@@ -466,6 +490,32 @@ body{
     color: #061b46;
     border-radius: 50%;
     padding: 3px 7px;
+}
+.welcome-section{
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 30px 0;
+    color: #061b46;
+    background-color: white;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+    
+
+}
+
+.blue-text{
+    color: #061b46;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: x-large;
+
+}
+.yellow-text{
+    color: #ffcc19;
+    font-family: monospace;
+    font-size:xx-large;
 }
 
 /* Sports Information */
@@ -693,47 +743,28 @@ body{
 /* Footer */
 
 .footer {
-    background: #061b46;
+    background: #101f3d;
     color: white;
-    padding: 20px 4%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 15px;
-}
-
-.footer h3 {
-    font-size: 14px;
-    
+    text-align: center;
+    padding: 35px 15px;
 }
 
 .footer h2 {
-    color: white;
-    font-size: 20px;
+    color: #f5b800;
+    font-size: 19px;
+    margin-bottom: 12px;
 }
 
 .footer p {
-    font-style: italic;
-    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 10px;
 }
 
-.social-links {
-    display: flex;
-    gap: 12px;
+.copyright {
+    color: #aeb8ca;
+    margin-top: 20px;
 }
 
-.social-links a {
-    background: white;
-    color: #061b46;
-    text-decoration: none;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-}
 
 /* Responsive Design */
 
